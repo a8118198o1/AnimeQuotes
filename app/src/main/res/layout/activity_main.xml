@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,4 +9,29 @@
     tools:context=".MainActivity">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:id="@+id/txtAnimeQuote"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShowQuotes"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        app:strokeWidth="2dp"
+        android:backgroundTint="@color/grey"
+        android:elevation="5dp"
+        android:layout_below="@+id/txtAnimeQuote"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

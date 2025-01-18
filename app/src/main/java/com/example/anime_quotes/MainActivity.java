@@ -30,5 +30,7 @@ public class MainActivity extends AppCompatActivity {
         //setting api of the website
         String animeQuotesApi = "https://anime-facts-rest-api.herokuapp.com/api/v1";
 
+        //
+
     }
 }
