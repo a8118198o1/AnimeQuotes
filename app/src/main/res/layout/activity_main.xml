@@ -10,7 +10,7 @@
 
 
     <ScrollView
-        android:id="@+id/txtAnimeQuote"
+        android:id="@+id/txtScrollView"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:paddingStart="5dp"
@@ -18,8 +18,9 @@
         android:layout_centerInParent="true">
 
         <TextView
+            android:id="@+id/txtAnimeQuotes"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@color/black" />
     </ScrollView>
@@ -31,7 +32,7 @@
         app:strokeWidth="2dp"
         android:backgroundTint="@color/grey"
         android:elevation="5dp"
-        android:layout_below="@+id/txtAnimeQuote"
+        android:layout_below="@+id/txtScrollView"
         android:layout_centerInParent="true"/>
 
 </RelativeLayout>

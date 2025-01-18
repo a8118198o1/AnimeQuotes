@@ -1,6 +1,8 @@
 package com.example.anime_quotes;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        //getting view by id for the btn and txt
+        Button showAnimeQuotes = findViewById(R.id.btnShowQuotes);
+        TextView animeQuotes = findViewById(R.id.txtAnimeQuotes);
 
         //making request queue for the api
         RequestQueue queue = Volley.newRequestQueue(this);
