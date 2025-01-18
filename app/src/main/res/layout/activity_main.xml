@@ -25,14 +25,15 @@
             android:textColor="@color/black" />
     </ScrollView>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btnShowQuotes"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        app:strokeWidth="2dp"
         android:backgroundTint="@color/grey"
         android:elevation="5dp"
         android:layout_below="@+id/txtScrollView"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:text="@string/btnAnime"
+        android:textColor="@color/black"/>
 
 </RelativeLayout>
