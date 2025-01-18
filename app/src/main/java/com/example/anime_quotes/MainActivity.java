@@ -8,6 +8,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        //making request queue for the api
+        RequestQueue queue = Volley.newRequestQueue(this);
+
+        //setting api of the website
+        String animeQuotesApi = "https://anime-facts-rest-api.herokuapp.com/api/v1";
 
     }
 }
