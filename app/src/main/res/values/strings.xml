@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Anime_Quotes</string>
-    <string name="btnAnime">Show Quotes</string>
+    <string name="quotes">Quotes</string>
+    <string name="home">Home</string>
+    <string name="anime">Anime</string>
+    <string name="search">Search Quotes</string>
+    <string name="setting">Setting</string>
+    <string name="icon">Icon used</string>
+    <string name="logo">Logo used</string>
+    <string name="img">Image used</string>
 </resources>

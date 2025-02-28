@@ -8,32 +8,4 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <ScrollView
-        android:id="@+id/txtScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
-        android:layout_centerInParent="true">
-
-        <TextView
-            android:id="@+id/txtAnimeQuotes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textColor="@color/black" />
-    </ScrollView>
-
-    <Button
-        android:id="@+id/btnShowQuotes"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:backgroundTint="@color/grey"
-        android:elevation="5dp"
-        android:layout_below="@+id/txtScrollView"
-        android:layout_centerInParent="true"
-        android:text="@string/btnAnime"
-        android:textColor="@color/black"/>
-
 </RelativeLayout>

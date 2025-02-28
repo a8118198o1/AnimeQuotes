@@ -31,38 +31,5 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        //getting view by id for the btn and txt
-        Button showAnimeQuotes = findViewById(R.id.btnShowQuotes);
-        TextView txtAnimeQuotes = findViewById(R.id.txtAnimeQuotes);
-
-        //making request queue for the api
-        RequestQueue queue = Volley.newRequestQueue(this);
-
-        //setting api of the website
-        String animeQuotesApi = "https://www.google.com/";
-
-        //setting to request queue
-        RequestQueue que = Volley.newRequestQueue(this);
-
-        //initialing onclick listener on btn
-        showAnimeQuotes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                StringRequest animeQuotes = new StringRequest(Request.Method.GET, animeQuotesApi, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        txtAnimeQuotes.setText(response.substring(0, 1000));
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(MainActivity.this, "Error occur while fetching data from the api", Toast.LENGTH_SHORT).show();
-                    }
-                });
-                que.add(animeQuotes);
-            }
-        });
-
     }
 }
